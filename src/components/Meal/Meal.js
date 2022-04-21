@@ -6,6 +6,7 @@ const Meal = (props) => {
     const { handleAddToOrder, meal } = props;
     return (
         <div className="meal">
+            <h1>This is our Meal section</h1>
             <img src={strMealThumb} alt="" />
             <h4>{strMeal}</h4>
             <p>{strInstructions.slice(0, 100)}</p>
