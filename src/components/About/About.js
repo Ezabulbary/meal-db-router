@@ -1,6 +1,7 @@
 import React from 'react';
 
 const About = () => {
+    
     return (
         <div className='p-10'>
             <div className='text-justify m-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem quis quos voluptates. Impedit consequatur sed ullam, ducimus amet nisi. Repudiandae ipsam fugiat provident eligendi iste veniam hic nobis placeat sed? Ullam rerum alias reprehenderit explicabo, nostrum, magnam, a numquam quia velit provident excepturi nemo. Modi laborum dolores odit, quam fugiat temporibus nemo vel labore aspernatur sed quaerat, dicta ratione nostrum earum tempora! Quas harum impedit minima expedita exercitationem iusto incidunt reiciendis aut inventore iure quod facilis explicabo qui deleniti quia mollitia, eligendi fugiat.
