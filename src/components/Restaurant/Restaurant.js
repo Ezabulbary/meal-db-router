@@ -13,18 +13,26 @@ const Restaurant = () => {
         .then(data => setMeals(data.meals));
     }, [searchText])
 
-    const searchFood = e =>{
-        setSearchText(e.target.value);
+    const handleAddToOrder = meal => {
+        console.log(meal)
+    }
+
+    const searchFood = event =>{
+        setSearchText(event.target.value);
     }
     return (
-        <div>
-            <h2>Find the food you want</h2>
+        <div className='text-center bg-gray-100'>
+            <h2 className='text-4xl p-6'>Find the food you want</h2>
             <input onChange={searchFood} type="text" name="" id="" />
             <br />
             <h3>Result found: {meals.length}</h3>
-            <div className='meals-container'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 m-4 '>
                 {
-                    meals.map(meal=> <Meal key={meal.idMeal} meal={meal}></Meal>)
+                    meals.map(meal => <Meal 
+                        key={meal.idMeal} 
+                        meal={meal}
+                        handleAddToOrder={handleAddToOrder}
+                        ></Meal>)
                 }
             </div>
         </div>
